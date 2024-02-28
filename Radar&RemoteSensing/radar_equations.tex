@@ -322,13 +322,13 @@ horizontal (H) and vertical (V) propagation polarizations
 		
 		\item Electric Field
 		
-		$\vec{E} = \rho \vec{J}$
+		$\tilde{E} = \rho \tilde{J}$
 		
 		where: 
 		
-		$\vec{E}$ = electric field [V/m]
+		$\tilde{E}$ = electric field [V/m]
 		
-		$\vec{J}$ = current density [A/$m^2$]
+		$\tilde{J}$ = current density [A/$m^2$]
 		
 		$\rho$ = resistivity of the medium [$\Omega$/m]
 		
@@ -336,7 +336,7 @@ horizontal (H) and vertical (V) propagation polarizations
 		
 		
 		
-		\item Coulomb's Law: $\vec{E} =  \frac{q}{4\pi \epsilon_0 r^2}\vec{R} [V/m^2]$
+		\item Coulomb's Law: $\tilde{E} =  \frac{q}{4\pi \epsilon_0 r^2}\vec{R} [V/m^2]$
 
 		where:
 
@@ -344,9 +344,9 @@ horizontal (H) and vertical (V) propagation polarizations
 
 		Dielectric Constant = $\epsilon = \epsilon_r \epsilon_0$
 		
-		$\vec{E}$ = electric field [V/m]
+		$\tilde{E}$ = electric field [V/m]
 		
-		$\vec{D}$ = Electric Flux Desnsity: $\vec{D} = \epsilon \vec{E}$
+		$\tilde{D}$ = Electric Flux Desnsity: $\tilde{D} = \epsilon \tilde{E}$
 		
 		
 
@@ -357,13 +357,13 @@ horizontal (H) and vertical (V) propagation polarizations
 	\item Magnetostatics
 		\begin{itemize}
 
-		\item Biot-Savart Law: $\vec{B} = \mu \vec{H}$
+		\item Biot-Savart Law: $\vec{B} = \mu \tilde{H}$
 
 		where:
 
-		$\vec{B}$ = Magnetic flux density [Tesla] = $\vec{B} = \frac{\mu_0 I}{2\pi r}$
+		$\tilde{B}$ = Magnetic flux density [Tesla] = $\tilde{B} = \frac{\mu_0 I}{2\pi r}$
 		
-		$\vec{H}$ = Magnetic field intensity [A/m]
+		$\tilde{H}$ = Magnetic field intensity [A/m]
 
 		$\mu_0$ = Permeability of free space \(\approx 4\pi \times 10^{-7} \, \text{T m/A}\)
 		$\mu = \mu_r \mu_0$ and $\mu_r = 1$ for this class
@@ -398,13 +398,68 @@ horizontal (H) and vertical (V) propagation polarizations
 
 
 \end{enumerate}
+\break
 
 
 \section*{Wave Propagation and Scattering}
 
 \begin{enumerate}
 
-	\item
+	\item The Homogenous Wave Equation
+	
+	\includegraphics[width=0.79\textwidth]{figs/HomogenousWaveEqn.png}
+	
+	Recall from Maxwell's equations that E and H are orthogonal:
+	
+	\centerline{$\bar{H} = \frac{1}{\eta}\vec{k}\times \bar{E}$}
+	
+	\centerline{$\bar{E} = -\eta \vec{k} \times \bar{H}$}
+	
+	\centerline{$\eta = \sqrt{\frac{\mu}{\epsilon}}$}
+	
+	and $\vec{k}$ is the unit vector in the direction of propagation.
+	
+	\begin{itemize}
+		\item One solution to the wave equation with $\tilde{E}_y = 0$ has the form:
+		
+		\includegraphics[width=0.69\textwidth]{figs/WaveSolution.png}
+		
+		
+	\end{itemize}
+	
+	\item Propagation through multiple elements
+	
+	Losses of medium are usually expressed one-way path loses in dB.
+	
+	\centerline{$L_i = \alpha_i d_i$}
+	
+	where $\alpha_i$ is the attenuation coefficient [dB/km] and $d_i$ is the path length [km]
+	
+	Loss along the full path length is the Free Space Propagation Loss (FSPL) and is the sum of the Losses ($L_1 + L_2 + L_3 + ... = L_{total}$)
+	
+	\item Plane Wave Propagation in Lossless Media
+	
+	\includegraphics[width=0.89\textwidth]{figs/LosslessMedia1.png}
+	
+	\includegraphics[width=0.89\textwidth]{figs/LosslessMedia2.png}
+	
+	\item Atmospheric Refraction
+	
+	Refraction - radio waves travel in a different direction because of the {\bf index of refraction}
+	
+	\centerline{The index of refraction, $n = \frac{c}{v_p}$}
+	
+	where c is the speed of light and $v_p$ is the phase speed of the wave in the medium \\
+	
+	\includegraphics[width=0.79\textwidth]{figs/Refraction.png}
+	
+	The index of refraction is a complex quantity with real and imaginary parts ($n = \sqrt{\epsilon_r} = n' - jn''$)
+	
+	and is also defined as:
+	
+	\centerline{$n = 1 + 10^{-6}N$}
+	
+	where N is the refractivity
 
 
 \end{enumerate}
@@ -414,13 +469,28 @@ horizontal (H) and vertical (V) propagation polarizations
 
 \begin{enumerate}
 
-	\item
+	\item Radiation Properties
+	\item Radiation Pattern
+	\item Beam width
+	\item Directivity (Isotropic radiator and Pattern solid angle)
+	\item Gain 
+
 
 
 \end{enumerate}
 
 
 \subsection*{Scattering}
+\begin{itemize}
+\item Refraction
+\item Diffraction
+\item Reflection
+– Surface, multi-path, and plate reflection
+\item Aircraft radar cross-section
+\end{itemize}
+
+
+
 
 
 

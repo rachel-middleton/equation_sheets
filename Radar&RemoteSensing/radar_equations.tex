@@ -460,6 +460,22 @@ horizontal (H) and vertical (V) propagation polarizations
 	\centerline{$n = 1 + 10^{-6}N$}
 	
 	where N is the refractivity
+	
+	\item*{Scattering}
+	\begin{itemize}
+	\item Refraction - waves change direction as they pass from one medium to another
+	\item Diffraction - waves change direction as they pass through an opening or navigate around a barrierrr
+	\item Reflection - waves bounce off barrier
+
+	– Surface, multi-path, and plate reflection
+
+	\item Radar cross-section
+		
+		For example, a plate has the cross section: 
+		
+		\includegraphics[width=0.69\textwidth]{figs/RCS_plate.png}
+	
+	\end{itemize}
 
 
 \end{enumerate}
@@ -470,24 +486,96 @@ horizontal (H) and vertical (V) propagation polarizations
 \begin{enumerate}
 
 	\item Radiation Properties
+		
+		\begin{itemize}
+		
+			\item Reciprocity
+			\item Antenna Pattern
+			\item Gain
+			\item Polarization
+			
+		\end{itemize}
+	\item Impedance Properties
+		\begin{itemize}
+			\item Radiation resistance
+			\item Loss resistance
+			\item Voltage Standing Wave Ratio (VSWR)
+		
+		\end{itemize}
+		
+	\item Antenna Radiated Power
+	
+	\includegraphics[width=0.79\textwidth]{figs/antennaradiatedpower.png}
+	
+		
+		
 	\item Radiation Pattern
+	
+		 The normalized radiation pattern is as follows:
+		 
+		 \includegraphics[width=0.79\textwidth]{figs/normalizedradiationpattern.png}
+		 
+		 
 	\item Beam width
+	
+		HPBW (half power beam width) is the angle between the two angles where the poer is half of the max value. In dB, the power drops about 3 dB from the max value. In Linear Voltage, the power drops by a factor of 0.707.
+	
 	\item Directivity (Isotropic radiator and Pattern solid angle)
+		
+		How well an antenna directs energy relative to an isotropic antenna
+		
+		Radiation intensity, the power radiated per unit solid angle:
+		
+		\includegraphics[width=0.59\textwidth]{figs/radiationintensity.png}
+		
+		And the power density at range R:
+		
+		$Q_{density} (R) = \frac{P_{radiated}}{\Omega_p R^2} [\frac{W}{m^2}]$
+		
+		where $\Omega_p$ is the pattern solid angle and can be approximated as:
+		
+		$\Omega_p = \theta_{HPBW} \phi_{HPBW}$
+		
+		{\bf Directivity, D:}
+		
+		$D = \frac{I_{antenna}}{I_{isotropic}} = \frac{\frac{P_{radiated}}{\Omega_p}}{\frac{P_{radiated}}{4\pi}} = \frac{4\pi}{\Omega_p}$ 
+		
+		Note that we make the following assumptions:
+		
+		\begin{itemize}
+			\item Ignore all sidelobes
+			\item All energy is within HPBW
+			\item Power density is uniform across beam solid angle
+		\end{itemize}
+		
 	\item Gain 
+	
+	Antenna efficiency, $\rho$: 
+		
+		$\rho = \frac{P_{radiated}}{P_t}$ 
+
+		where $P_t$ is the power supplied by the transmitter to the antenna terminals.
+		
+	Gain, $G$:
+	
+		$G = \rho D$
+		
+
+	\item VSWR 
+	
+	Considered the antenna as an impedance, or the ratio of voltage to current at the feed port.
+	We want to maximize the power transfer, but a VSWR of 2:1 is generally good enough:
+	
+	\includegraphics[width=0.79\textwidth]{figs/VSWR.png}
+	
+	where $\Gamma$ is the reflection coefficient
 
 
 
 \end{enumerate}
 
 
-\subsection*{Scattering}
-\begin{itemize}
-\item Refraction
-\item Diffraction
-\item Reflection
-– Surface, multi-path, and plate reflection
-\item Aircraft radar cross-section
-\end{itemize}
+
 
 
 

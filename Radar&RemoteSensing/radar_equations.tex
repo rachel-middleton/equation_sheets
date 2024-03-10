@@ -569,7 +569,154 @@ horizontal (H) and vertical (V) propagation polarizations
 	\includegraphics[width=0.79\textwidth]{figs/VSWR.png}
 	
 	where $\Gamma$ is the reflection coefficient
+	
+	
+	\item Effective Aperture, $A_e$
+	
+	The solid angle $\Omega_p$ is related to the area an antenna would use to capture propagating power density, Q.
+	
+	The effective aperture is scaled by wavelength. 
+	
+	$\Omega_p = \frac{\lambda^2}{A_e}$
+	
+	Thus: $A_e = \frac{\lambda^2}{\Omega_p} = \frac{\lambda^2}{\theta_{HPBW}\phi_{HPBW}}$
+	
+	So Directivity, D, can also be calculated as:
+	
+	$D = \frac{4\pi}{\Omega_p} = \frac{4\pi}{\lambda^2}A_e$
+	
+	
+	\item Beam Width
+	
+	Let beam width be a function of antenna coordinates (x,y) instead of $\theta$ and $\phi$.
+	
+	From $\Omega_p =  \theta_{HPBW}\phi_{HPBW} = \frac{\lambda^2}{A_e}$, we can write:
+	
+	$\beta_x \beta_y \approx \frac{\lambda}{l_x} \frac{\lambda}{l_y}$
+	
+	So, beam width is approximately: $\beta \approx \frac{\lambda}{length of antenna}$ [radians]
+	
+	\includegraphics[width=0.79\textwidth]{figs/beamwidth.png}
+	
+	
+	\item Physical Aperture, $A_p$
+	
+	For dish and horn antennas, it can be useful to relate effective and physical apertures through the aperture efficiency $\eta _{aperature}$
+	
+	$A_e = \eta_{aperature} A_p$
 
+	\item Aperture illumination
+	
+	More amplitude taper increases the antenna beam width by factor $k_x$. and reduces the side-lobe amplitude
+	
+	$\beta_x = k_x \frac{\lambda}{l_x}$ 
+	
+	Antenna efficiency is also related to these constants:
+	
+	$\eta_{aperature} = \frac{1}{k_x k_y}$
+	
+	
+	\item Polarization
+	
+	Types of polarizations:
+	\begin{itemize}
+	\item Linear polarizations (horizontal and vertical)
+	
+	\includegraphics[width=0.69\textwidth]{figs/linearpolarization.png}
+	
+	\item Slant polarization
+	
+	\includegraphics[width=0.69\textwidth]{figs/slantpolarization.png}
+	
+	\item Circular polarization
+	
+	Right hand circular (counter clock-wise rotation)
+	
+	\includegraphics[width=0.69\textwidth]{figs/RHCpolarization.png}
+	
+	Left hand circular (clock-wise rotation)
+	
+	\includegraphics[width=0.69\textwidth]{figs/LHCpolarization.png}
+	
+	
+	\item Elliptical polarization
+	
+	\includegraphics[width=0.69\textwidth]{figs/elipticalpolarization.png}
+	
+	\end{itemize}
+	
+	Transform between linear and circular polarizations:
+	
+	\includegraphics[width=0.69\textwidth]{figs/transform\_polarizations.png}
+	
+	
+	Target Scattering Matrix
+	
+	A scattered wave's polarization is determined by its scattering matrix:
+	
+	$E^{scat} = S_{target}E^{inc}$
+	
+	where the scattering angle and incident angle both change the scattering matrix. In the monostatic case, the scattering angle is 180
+degrees from the incident angle is called backscattering.
+	
+	\includegraphics[width=0.69\textwidth]{figs/scattering\_matrix.png}
+
+
+\end{enumerate}
+
+
+{\bf Volume Scattering}
+
+\begin{enumerate}
+
+
+
+
+
+\item Radar Pulse Volume
+
+The volume of the radar resolution volume is defined by range, and the
+azimuth and elevation angles of the antenna pattern.
+
+
+
+
+\item Radar Cross Section of volume of distributed targets
+
+The RCS of volume targets is the summation of RCS of the individual targets:
+
+$\sigma_{volume} = \sigma^0 \Delta V = \sum \sigma_{targets}(i) \Delta V = \eta \Delta V$
+
+where $\sigma^0$ is the RCS of the volume of targets per unit volume
+
+
+\item Radar Power Equation for volume target scattering
+
+The radar resolution volume (aka resolution cell) is the volume
+illuminated by the radar.
+
+\includegraphics[width=0.69\textwidth]{figs/radar\_resolution\_volume.png}
+
+The power returned at the antenna terminals by a volume target is given as:
+
+\includegraphics[width=0.69\textwidth]{figs/radar\_eqn\_volume\_targets.png}
+
+The SNR for a volume target is given as:
+
+\includegraphics[width=0.69\textwidth]{figs/SNRVolume.png}
+
+where $\tau$ is the pulse length.
+
+
+
+
+\item For more on estimating RCS depending on the radar grazing angle, see 
+
+ASEN5245\_Scattering\_01\_Volume\_Surface\_Particle\_022724.pdf
+
+
+
+\item Scattering Regions
 
 
 \end{enumerate}

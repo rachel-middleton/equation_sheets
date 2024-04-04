@@ -687,7 +687,7 @@ The RCS of volume targets is the summation of RCS of the individual targets:
 
 $\sigma_{volume} = \sigma^0 \Delta V = \sum \sigma_{targets}(i) \Delta V = \eta \Delta V$
 
-where $\sigma^0$ is the RCS of the volume of targets per unit volume
+where $\sigma^0 = \sum \sigma_{targets}(i) = \eta$ is the RCS of the volume of targets per unit volume
 
 
 \item Radar Power Equation for volume target scattering
@@ -714,13 +714,132 @@ where $\tau$ is the pulse length.
 
 ASEN5245\_Scattering\_01\_Volume\_Surface\_Particle\_022724.pdf
 
+Beam limited case - high grazing angle (including nadir) - modify the radar power equation $P_r \sim 1/R^2$
+
+Pulse limited case - low grazing angle - modify the radar power equation $P_r \sim 1/R^3$
 
 
-\item Scattering Regions
+
+\item Scattering Regions - The size of the object relative to the radar wavelength will determine
+how waves scatters off and around the object
+
+\begin{itemize}
+	\item Rayleigh Scattering
+	
+	Particle is very small compared to wavelength. The electric field is invariant in the vicinity of the particle.
+	
+	$\frac{2\pi a}{\lambda}< 0.5$
+	
+	\item Mie Scattering
+	
+	Particle is comparable in size to wavelength. The electric field varies across the particle.
+	
+	%$\sim 1 < \frac{2\pi a}{\lambda} < 6$
+	
+	\item Optical Scattering
+	
+	Particle is much larger than wavelength. Scattering occurs off the front face of the sphere.
+	
+	%$\sim 10 < \frac{2\pi a}{\lambda} < 20$
+	
+\end{itemize}
+
+\includegraphics[width=0.79\textwidth]{figs/scattering_regions.png}
+
+\item Mie Theory - solution to Maxwell's equations for scattering and absorption of EM waves by a sphere
+
+	Solution depends on the size parameter: $x = \oldfrac{2\pi r}{\lambda}$
+	
+	and the normalized index of refraction: $m = \frac{n_{particle}}{n_{medium}}$
+	
+	
+	{\bf Mie scattering:}
+	
+\includegraphics[width=0.79\textwidth]{figs/mie_scattering.png}
+
+\break
+
+	{\bf Mie scattering for a metal sphere:}
+	
+\includegraphics[width=0.79\textwidth]{figs/mie_scattering_metal.png}
+
+\item Rayleigh Scattering for Dielectrics
+
+\includegraphics[width=0.69\textwidth]{figs/rayleigh_scattering.png}
+
+\item Radar Reflectivity
+
+\includegraphics[width=0.69\textwidth]{figs/radar_reflectivity.png}
+
+\break
+
+In the radar range equation:
+
+$\sigma_{RCS pulse volume} = \Delta V \eta = \Delta V \frac{\pi^5 |K|^2}{\lambda^4}Z$ [$mm^2$]
+
+Where the radar pulse volume is: 
+
+$\Delta V = (\frac{c\tau}{2})(\frac{\pi R^2 \theta_{HPBW}\phi_{HPBW}}{8(4\pi)^3R^2}\eta)$ [W]
+
+Thus, the received power can be expressed as a function of radar reflectivity factor:
+
+\includegraphics[width=0.69\textwidth]{figs/radar_power_from_reflectivity.png}
+
+
+\item Raindrop Size Distribution
+
+\includegraphics[width=0.69\textwidth]{figs/raindrop_size_dist.png}
+
+Raindrops have differential reflectivity, thus the RCS changes with horizontal and vertical polarizations.
+
 
 
 \end{enumerate}
 
+
+\section{Motion}
+
+\begin{enumerate}
+	
+	\item{Target Motion}
+	
+	\begin{itemize}
+	
+		\item Power-only velocity estimation:
+	
+		The time it takes the target to move from one range gate to another, $T_{\Delta R}$, is equal to the range 	resolution over the target velocity: $T_{\Delta R} = \frac{\Delta R}{v_{target}}$
+		
+
+		
+		
+	\end{itemize}
+	
+	\item{Doppler Frequency}
+	
+			$f_d = f_{Rx} - f_{Tx} = \frac{2 v_d}{\lambda}$ [Hz]
+		
+		Where + $f_d$ indicates an approaching target and - $f_d$ indicates a receding target.
+		
+		The doppler velocity, defined here as $v_d$ is the radial component of velocity: $v_d = v cos (\theta)$, where $\theta$ is the angle from the horizon. 
+		
+		Doppler frequency can also be represented as the change in phasor with each pulse:
+		
+		$f_d = \frac{1}{2\pi}\frac{\Delta \phi}{\Delta t}$
+	
+	
+	\item{Doppler Clutter}
+	
+	\includegraphics[width=0.69\textwidth]{figs/doppler_clutter.png}
+	
+	An example of the parameters would be:
+	
+	\includegraphics[width=0.69\textwidth]{figs/clutter_params.png}
+
+
+
+
+
+\end{enumerate}
 
 
 

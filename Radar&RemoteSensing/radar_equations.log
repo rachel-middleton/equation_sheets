@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.20)  2 APR 2024 09:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.20)  19 APR 2024 12:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -503,40 +503,243 @@ Package pdftex.def Info: figs/raindrop_size_dist.png  used on input line 791.
 <figs/doppler_clutter.png, id=137, 618.31pt x 391.4625pt>
 File: figs/doppler_clutter.png Graphic file (type png)
 <use figs/doppler_clutter.png>
-Package pdftex.def Info: figs/doppler_clutter.png  used on input line 835.
+Package pdftex.def Info: figs/doppler_clutter.png  used on input line 832.
 (pdftex.def)             Requested size: 312.54895pt x 197.8871pt.
  [19 <./figs/radar_power_from_reflectivity.png> <./figs/raindrop_size_dist.png>
 ]
 <figs/clutter_params.png, id=144, 545.03625pt x 197.73875pt>
 File: figs/clutter_params.png Graphic file (type png)
 <use figs/clutter_params.png>
-Package pdftex.def Info: figs/clutter_params.png  used on input line 839.
+Package pdftex.def Info: figs/clutter_params.png  used on input line 836.
 (pdftex.def)             Requested size: 312.54895pt x 113.39113pt.
- [20 <./figs/doppler_clutter.png> <./figs/clutter_params.png>] (./radar_equatio
-ns.aux) ) 
+<figs/moving_target_signal.png, id=145, 505.89pt x 301.125pt>
+File: figs/moving_target_signal.png Graphic file (type png)
+<use figs/moving_target_signal.png>
+Package pdftex.def Info: figs/moving_target_signal.png  used on input line 841.
+
+(pdftex.def)             Requested size: 312.54895pt x 186.04309pt.
+<figs/matched_filter_doppler.png, id=146, 479.7925pt x 318.18875pt>
+File: figs/matched_filter_doppler.png Graphic file (type png)
+<use figs/matched_filter_doppler.png>
+Package pdftex.def Info: figs/matched_filter_doppler.png  used on input line 84
+5.
+(pdftex.def)             Requested size: 312.54895pt x 207.27661pt.
+ [20 <./figs/doppler_clutter.png> <./figs/clutter_params.png> <./figs/moving_ta
+rget_signal.png>]
+<figs/doppler_clutter_spectrum.png, id=153, 500.87125pt x 254.9525pt>
+File: figs/doppler_clutter_spectrum.png Graphic file (type png)
+<use figs/doppler_clutter_spectrum.png>
+Package pdftex.def Info: figs/doppler_clutter_spectrum.png  used on input line 
+849.
+(pdftex.def)             Requested size: 312.54895pt x 159.09982pt.
+<figs/doppler_clutter_spectrum_2.png, id=154, 524.96124pt x 240.9pt>
+File: figs/doppler_clutter_spectrum_2.png Graphic file (type png)
+<use figs/doppler_clutter_spectrum_2.png>
+Package pdftex.def Info: figs/doppler_clutter_spectrum_2.png  used on input lin
+e 851.
+(pdftex.def)             Requested size: 312.54895pt x 143.431pt.
+<figs/doppler_clutter_spectrum_3.png, id=155, 233.87375pt x 302.12875pt>
+File: figs/doppler_clutter_spectrum_3.png Graphic file (type png)
+<use figs/doppler_clutter_spectrum_3.png>
+Package pdftex.def Info: figs/doppler_clutter_spectrum_3.png  used on input lin
+e 853.
+(pdftex.def)             Requested size: 176.6572pt x 228.22336pt.
+ [21 <./figs/matched_filter_doppler.png> <./figs/doppler_clutter_spectrum.png> 
+<./figs/doppler_clutter_spectrum_2.png>]
+<figs/coherent_trans_architecture.png, id=162, 492.84125pt x 245.91875pt>
+File: figs/coherent_trans_architecture.png Graphic file (type png)
+<use figs/coherent_trans_architecture.png>
+Package pdftex.def Info: figs/coherent_trans_architecture.png  used on input li
+ne 887.
+(pdftex.def)             Requested size: 312.54895pt x 155.96153pt.
+<figs/coherent_tx_signal.png, id=163, 503.8825pt x 148.555pt>
+File: figs/coherent_tx_signal.png Graphic file (type png)
+<use figs/coherent_tx_signal.png>
+Package pdftex.def Info: figs/coherent_tx_signal.png  used on input line 890.
+(pdftex.def)             Requested size: 312.54895pt x 92.14621pt.
+ [22 <./figs/doppler_clutter_spectrum_3.png> <./figs/coherent_trans_architectur
+e.png> <./figs/coherent_tx_signal.png>]
+<figs/coherent_rx_signal.png, id=170, 313.17pt x 31.11626pt>
+File: figs/coherent_rx_signal.png Graphic file (type png)
+<use figs/coherent_rx_signal.png>
+Package pdftex.def Info: figs/coherent_rx_signal.png  used on input line 894.
+(pdftex.def)             Requested size: 221.95676pt x 22.05421pt.
+<figs/mixer_operation.png, id=171, 520.94624pt x 332.24126pt>
+File: figs/mixer_operation.png Graphic file (type png)
+<use figs/mixer_operation.png>
+Package pdftex.def Info: figs/mixer_operation.png  used on input line 918.
+(pdftex.def)             Requested size: 357.84158pt x 228.21758pt.
+<figs/mixer_stationary_target.png, id=172, 730.73pt x 445.665pt>
+File: figs/mixer_stationary_target.png Graphic file (type png)
+<use figs/mixer_stationary_target.png>
+Package pdftex.def Info: figs/mixer_stationary_target.png  used on input line 9
+30.
+(pdftex.def)             Requested size: 357.84158pt x 218.24174pt.
+ [23 <./figs/coherent_rx_signal.png> <./figs/mixer_operation.png>]
+<figs/mixer_moving_target.png, id=178, 741.77126pt x 472.76625pt>
+File: figs/mixer_moving_target.png Graphic file (type png)
+<use figs/mixer_moving_target.png>
+Package pdftex.def Info: figs/mixer_moving_target.png  used on input line 934.
+(pdftex.def)             Requested size: 357.84158pt x 228.07222pt.
+<figs/mixer_receding_target.png, id=179, 660.4675pt x 446.66875pt>
+File: figs/mixer_receding_target.png Graphic file (type png)
+<use figs/mixer_receding_target.png>
+Package pdftex.def Info: figs/mixer_receding_target.png  used on input line 938
+.
+(pdftex.def)             Requested size: 357.84158pt x 242.0154pt.
+
+[24 <./figs/mixer_stationary_target.png> <./figs/mixer_moving_target.png>]
+<figs/extract_real_voltage.png, id=185, 738.76pt x 493.845pt>
+File: figs/extract_real_voltage.png Graphic file (type png)
+<use figs/extract_real_voltage.png>
+Package pdftex.def Info: figs/extract_real_voltage.png  used on input line 943.
+
+(pdftex.def)             Requested size: 357.84158pt x 239.20557pt.
+<figs/mixer1.png, id=186, 587.19376pt x 360.34625pt>
+File: figs/mixer1.png Graphic file (type png)
+<use figs/mixer1.png>
+Package pdftex.def Info: figs/mixer1.png  used on input line 951.
+(pdftex.def)             Requested size: 312.54895pt x 191.80186pt.
+
+[25 <./figs/mixer_receding_target.png> <./figs/extract_real_voltage.png>]
+<figs/mixer2.png, id=193, 988.69376pt x 676.5275pt>
+File: figs/mixer2.png Graphic file (type png)
+<use figs/mixer2.png>
+Package pdftex.def Info: figs/mixer2.png  used on input line 955.
+(pdftex.def)             Requested size: 357.84158pt x 244.8504pt.
+<figs/receiver_architec_terms.png, id=194, 970.62625pt x 506.89375pt>
+File: figs/receiver_architec_terms.png Graphic file (type png)
+<use figs/receiver_architec_terms.png>
+Package pdftex.def Info: figs/receiver_architec_terms.png  used on input line 9
+57.
+(pdftex.def)             Requested size: 312.54895pt x 163.22253pt.
+<figs/quad_mixer_output.png, id=195, 1007.765pt x 179.67125pt>
+File: figs/quad_mixer_output.png Graphic file (type png)
+<use figs/quad_mixer_output.png>
+Package pdftex.def Info: figs/quad_mixer_output.png  used on input line 964.
+(pdftex.def)             Requested size: 357.84158pt x 63.7988pt.
+
+[26 <./figs/mixer1.png> <./figs/mixer2.png> <./figs/receiver_architec_terms.png
+>]
+<figs/nyquist_frequency.png, id=202, 956.57375pt x 176.66pt>
+File: figs/nyquist_frequency.png Graphic file (type png)
+<use figs/nyquist_frequency.png>
+Package pdftex.def Info: figs/nyquist_frequency.png  used on input line 968.
+(pdftex.def)             Requested size: 312.54895pt x 57.72112pt.
+<figs/nyquist_freq2.png, id=203, 782.925pt x 203.76125pt>
+File: figs/nyquist_freq2.png Graphic file (type png)
+<use figs/nyquist_freq2.png>
+Package pdftex.def Info: figs/nyquist_freq2.png  used on input line 972.
+(pdftex.def)             Requested size: 312.54895pt x 81.34448pt.
+<figs/coherent_int.png, id=204, 916.42375pt x 262.9825pt>
+File: figs/coherent_int.png Graphic file (type png)
+<use figs/coherent_int.png>
+Package pdftex.def Info: figs/coherent_int.png  used on input line 982.
+(pdftex.def)             Requested size: 312.54895pt x 89.68974pt.
+<figs/coherent_int2.png, id=205, 729.72626pt x 92.345pt>
+File: figs/coherent_int2.png Graphic file (type png)
+<use figs/coherent_int2.png>
+Package pdftex.def Info: figs/coherent_int2.png  used on input line 984.
+(pdftex.def)             Requested size: 267.24939pt x 33.81906pt.
+<figs/multiple_targets_power.png, id=206, 388.45125pt x 82.3075pt>
+File: figs/multiple_targets_power.png Graphic file (type png)
+<use figs/multiple_targets_power.png>
+Package pdftex.def Info: figs/multiple_targets_power.png  used on input line 99
+8.
+(pdftex.def)             Requested size: 267.24939pt x 56.6277pt.
+<figs/multiple_targets_def.png, id=207, 653.44125pt x 158.5925pt>
+File: figs/multiple_targets_def.png Graphic file (type png)
+<use figs/multiple_targets_def.png>
+Package pdftex.def Info: figs/multiple_targets_def.png  used on input line 1002
+.
+(pdftex.def)             Requested size: 267.24939pt x 64.86119pt.
+ [27 <./figs/quad_mixer_output.png> <./figs/nyquist_frequency.png> <./figs/nyqu
+ist_freq2.png> <./figs/coherent_int.png> <./figs/coherent_int2.png> <./figs/mul
+tiple_targets_power.png>]
+<figs/two_targets_power.png, id=217, 700.6175pt x 130.4875pt>
+File: figs/two_targets_power.png Graphic file (type png)
+<use figs/two_targets_power.png>
+Package pdftex.def Info: figs/two_targets_power.png  used on input line 1006.
+(pdftex.def)             Requested size: 312.54895pt x 58.21109pt.
+<figs/return_power_pdf.png, id=218, 521.95pt x 228.855pt>
+File: figs/return_power_pdf.png Graphic file (type png)
+<use figs/return_power_pdf.png>
+Package pdftex.def Info: figs/return_power_pdf.png  used on input line 1020.
+(pdftex.def)             Requested size: 312.54895pt x 137.04167pt.
+<figs/chi_squared.png, id=219, 334.24875pt x 66.2475pt>
+File: figs/chi_squared.png Graphic file (type png)
+<use figs/chi_squared.png>
+Package pdftex.def Info: figs/chi_squared.png  used on input line 1027.
+(pdftex.def)             Requested size: 267.24939pt x 52.9728pt.
+ [28 <./figs/multiple_targets_def.png> <./figs/two_targets_power.png> <./figs/r
+eturn_power_pdf.png> <./figs/chi_squared.png>]
+<figs/phased_arrays.png, id=227, 582.175pt x 383.4325pt>
+File: figs/phased_arrays.png Graphic file (type png)
+<use figs/phased_arrays.png>
+Package pdftex.def Info: figs/phased_arrays.png  used on input line 1039.
+(pdftex.def)             Requested size: 312.54895pt x 205.85692pt.
+<figs/normalized_array_pattern.png, id=228, 584.1825pt x 154.5775pt>
+File: figs/normalized_array_pattern.png Graphic file (type png)
+<use figs/normalized_array_pattern.png>
+Package pdftex.def Info: figs/normalized_array_pattern.png  used on input line 
+1043.
+(pdftex.def)             Requested size: 339.72592pt x 89.89558pt.
+<figs/array_pattern_not.png, id=229, 652.4375pt x 354.32375pt>
+File: figs/array_pattern_not.png Graphic file (type png)
+<use figs/array_pattern_not.png>
+Package pdftex.def Info: figs/array_pattern_not.png  used on input line 1045.
+(pdftex.def)             Requested size: 312.54895pt x 169.74367pt.
+<figs/steering_array.png, id=230, 455.7025pt x 215.80624pt>
+File: figs/steering_array.png Graphic file (type png)
+<use figs/steering_array.png>
+Package pdftex.def Info: figs/steering_array.png  used on input line 1051.
+(pdftex.def)             Requested size: 312.54895pt x 148.01736pt.
+
+[29 <./figs/phased_arrays.png> <./figs/normalized_array_pattern.png> <./figs/ar
+ray_pattern_not.png>]
+<figs/grating_lobes.png, id=237, 411.5375pt x 101.37875pt>
+File: figs/grating_lobes.png Graphic file (type png)
+<use figs/grating_lobes.png>
+Package pdftex.def Info: figs/grating_lobes.png  used on input line 1055.
+(pdftex.def)             Requested size: 267.24939pt x 65.83507pt.
+<figs/grating_lobes2.png, id=238, 595.22375pt x 137.51375pt>
+File: figs/grating_lobes2.png Graphic file (type png)
+<use figs/grating_lobes2.png>
+Package pdftex.def Info: figs/grating_lobes2.png  used on input line 1057.
+(pdftex.def)             Requested size: 339.72592pt x 78.48647pt.
+<figs/pattern_multiplication_principle.png, id=239, 432.61626pt x 295.1025pt>
+File: figs/pattern_multiplication_principle.png Graphic file (type png)
+<use figs/pattern_multiplication_principle.png>
+Package pdftex.def Info: figs/pattern_multiplication_principle.png  used on inp
+ut line 1061.
+(pdftex.def)             Requested size: 267.24939pt x 182.30872pt.
+ [30 <./figs/steering_array.png> <./figs/grating_lobes.png> <./figs/grating_lob
+es2.png> <./figs/pattern_multiplication_principle.png>]
+(./radar_equations.aux) ) 
 Here is how much of TeX's memory you used:
- 3416 strings out of 476025
- 54773 string characters out of 5790017
+ 3647 strings out of 476025
+ 61903 string characters out of 5790017
  1861388 words of memory out of 5000000
- 23816 multiletter control sequences out of 15000+600000
+ 24014 multiletter control sequences out of 15000+600000
  520485 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,6n,62p,259b,276s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.p
-fb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on radar_equations.pdf (20 pages, 5057142 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm10
+00.pfb>
+Output written on radar_equations.pdf (30 pages, 10186166 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 296 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 words of extra memory for PDF output out of 10000 (max. 10000000)
 

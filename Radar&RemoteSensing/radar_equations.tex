@@ -834,6 +834,255 @@ Raindrops have differential reflectivity, thus the RCS changes with horizontal a
 	An example of the parameters would be:
 	
 	\includegraphics[width=0.69\textwidth]{figs/clutter_params.png}
+	
+	
+	\item{Received signal for a moving target}
+
+	\includegraphics[width=0.69\textwidth]{figs/moving_target_signal.png}
+	
+	\item{Apply a matched filter for a doppler radar}
+
+	\includegraphics[width=0.69\textwidth]{figs/matched_filter_doppler.png}
+	
+	\item{Doppler clutter spectrum}
+	
+	\includegraphics[width=0.69\textwidth]{figs/doppler_clutter_spectrum.png}
+	
+	\includegraphics[width=0.69\textwidth]{figs/doppler_clutter_spectrum_2.png}
+	
+	\includegraphics[width=0.39\textwidth]{figs/doppler_clutter_spectrum_3.png}
+	
+	Where $F_D$ is the location of the center of the doppler spectrum. 
+	
+	$PRF$ is the pulse repetition frequency.
+	
+	$\psi$ is the squint angle.
+	
+	$\theta$ is the HPBW ?
+	
+	$MT$ is the moving target
+
+
+\end{enumerate}
+
+
+\section{Doppler Radar System Design}
+
+\begin{enumerate}
+
+
+\item{Coherent Transmitter}
+
+Coherent – the local oscillator communicates with
+the transmitter and receiver
+
+Phase at start of Tx pulse is the same for every pulse.
+
+Tx phase is known throughout inter-pulse period (Reference Signal)
+
+Received signal will be instantaneously compared with Tx phase
+
+Architecture:
+
+\includegraphics[width=0.69\textwidth]{figs/coherent_trans_architecture.png}
+
+
+\includegraphics[width=0.69\textwidth]{figs/coherent_tx_signal.png}
+
+The received signal:
+
+\includegraphics[width=0.49\textwidth]{figs/coherent_rx_signal.png}
+
+Transmitter Parameters:
+
+Peak power: $P_p$ - can only be transmitted for short durations
+
+Average transmitted power: $P_{av} = P_p \frac{\tau}{T_{ipp}}$
+
+
+Duty Cycle = $ 100 \frac{\tau}{T_{ipp}}$ [\%]
+
+
+\item{Mixer}
+
+A mixer is a nonlinear device used to change the frequency of an input
+signal to a new output frequencies.
+The output frequencies, called Intermediate Frequencies (IF) are the sum
+and difference frequencies between the input Radio Frequency (RF) signal
+and the Local Oscillator (LO) reference:
+
+$\omega_{RF} +\omega_{LO}$ - Upper side-band
+
+$\omega_{RF} -\omega_{LO}$ - Lower side-band
+
+\includegraphics[width=0.79\textwidth]{figs/mixer_operation.png}
+
+
+Use a bandpass filter on a mixer to remove spurs (unwanted frequencies) and keep only the good frequencies:
+
+either $\omega_{RF} +\omega_{LO}$ or $\omega_{RF} -\omega_{LO}$
+
+Can also use an amplifier to correct for
+conversion loss \& filter loss
+
+Example with stationary target:
+
+\includegraphics[width=0.79\textwidth]{figs/mixer_stationary_target.png}
+
+With moving target:
+
+\includegraphics[width=0.79\textwidth]{figs/mixer_moving_target.png}
+
+With receding target:
+
+\includegraphics[width=0.79\textwidth]{figs/mixer_receding_target.png}
+
+
+To extract the real part of the voltage: 
+
+\includegraphics[width=0.79\textwidth]{figs/extract_real_voltage.png}
+
+
+
+\item{Receiver architecture}
+
+Homodyne Receiver – 1 Mixer
+
+\includegraphics[width=0.69\textwidth]{figs/mixer1.png}
+
+Heterodyne Receiver – 2 Stages of Mixing
+
+\includegraphics[width=0.79\textwidth]{figs/mixer2.png}
+
+\includegraphics[width=0.69\textwidth]{figs/receiver_architec_terms.png}
+
+
+\item{Coherent Integration \& Doppler Velocity Ambiguity}
+
+Recall the output of the quadrature mixer:
+
+\includegraphics[width=0.79\textwidth]{figs/quad_mixer_output.png}
+
+The nyquist frequency:
+
+\includegraphics[width=0.69\textwidth]{figs/nyquist_frequency.png}
+
+We can calculate the maximum observable radial velocity:
+
+\includegraphics[width=0.69\textwidth]{figs/nyquist_freq2.png}
+
+Or in simpler terms:
+
+$v_{max}^{radial} = \frac{\lambda}{4T_{IPP}}$
+
+Including coherent integration:
+
+$v_{max}^{radial} = \frac{\lambda}{4N_{coh}T_{IPP}}$ [m/s]
+
+\includegraphics[width=0.69\textwidth]{figs/coherent_int.png}
+
+\includegraphics[width=0.59\textwidth]{figs/coherent_int2.png}
+
+The maximum unambiguous range is:
+
+$R_{unambiguous} = R_u = \frac{cT_{IPP}}{2}$
+
+Range-Doppler Ambiguity constant:
+
+$R_u v_{max}^{radial} = \frac{c\lambda}{8}$
+
+\item{Target Fluctuation Models}
+
+Total power return from multiple targets:
+
+\includegraphics[width=0.59\textwidth]{figs/multiple_targets_power.png}
+
+Where the RCS total is: 
+
+\includegraphics[width=0.59\textwidth]{figs/multiple_targets_def.png}
+
+If we consider power as a function of wavelength:
+
+\includegraphics[width=0.69\textwidth]{figs/two_targets_power.png}
+
+
+
+Phase of random scatterers in pulse volume:
+
+The power returns have an exponential distribution when there is no dominant target:
+
+$p(P_r) = \frac{1}{\bar{P_r}}\exp [\frac{-P_r}{\bar{P_r}]}$ where $P_r$ is positive and $\bar{P_r}$ is the mean return power.
+
+
+And the real and imaginary components are assumed independent, random variables with Gaussian distributions with the same variance: 
+
+
+\includegraphics[width=0.69\textwidth]{figs/return_power_pdf.png}
+
+
+In the case where there is a dominant target:
+
+Use a chi-square distribution with four degrees of freedom:
+
+\includegraphics[width=0.59\textwidth]{figs/chi_squared.png}
+
+\end{enumerate}
+
+\pagebreak
+
+\section{Phased Array Antennas}
+
+\begin{enumerate}
+
+\item{Concept of phased array antennas}
+
+\includegraphics[width=0.69\textwidth]{figs/phased_arrays.png}
+
+\item{Normalized array factor for N-element array}
+
+\includegraphics[width=0.75\textwidth]{figs/normalized_array_pattern.png}
+
+\includegraphics[width=0.69\textwidth]{figs/array_pattern_not.png}
+
+\item{Steering the main beam}
+
+"Broadside" means to point normal to the array.
+
+\includegraphics[width=0.69\textwidth]{figs/steering_array.png}
+
+\item{Grating lobes}
+
+\includegraphics[width=0.59\textwidth]{figs/grating_lobes.png}
+
+\includegraphics[width=0.75\textwidth]{figs/grating_lobes2.png}
+
+\item{Pattern multiplication}
+
+\includegraphics[width=0.59\textwidth]{figs/pattern_multiplication_principle.png}
+
+%\item{Image theory}
+
+
+\item{MIMO radar (Multiple In Multiple Out)}
+
+Define MIMO configuration
+• Processing Chain
+– Fast Time processing – (Range)
+– Slow Time processing – (Doppler)
+– Angle-of-Arrival (AoA) processing – (Angle)
+• Converting a Physical Antenna Array to a Virtual Antenna Array
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
